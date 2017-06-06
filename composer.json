@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/yeahmobi-php-client",
     "description": "A YeahMobi Client for PHP",
-    "keywords": ["api", "Rulerr", "Rulerr-YeahMobi", "YeahMobi", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "yeahmobi", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
