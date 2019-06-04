@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of YeahMobi PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\YeahMobi;
+namespace Plients\YeahMobi;
 
-use BrianFaust\Http\Http;
+use Plients\Http\Http;
 
 class Client
 {
@@ -37,13 +37,13 @@ class Client
      *
      * @param string $name
      *
-     * @return \BrianFaust\YeahMobi\API\AbstractAPI
+     * @return \Plients\YeahMobi\API\AbstractAPI
      */
     public function api(string $name): API\AbstractAPI
     {
         $client = Http::withBaseUri("http://yeahmobi.hasoffers.com/?api_key={$this->key}");
 
-        $class = "BrianFaust\\YeahMobi\\API\\{$name}";
+        $class = "Plients\\YeahMobi\\API\\{$name}";
 
         return new $class($client);
     }

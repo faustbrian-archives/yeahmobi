@@ -1,13 +1,19 @@
 {
-    "name": "faustbrian/yeahmobi-php-client",
+    "name": "plients/yeahmobi",
     "description": "A YeahMobi Client for PHP",
-    "keywords": ["api", "http", "yeahmobi"],
+    "keywords": [
+        "api",
+        "http",
+        "yeahmobi"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
         "php": "^7.1",
         "faustbrian/http": "^1.0"
@@ -18,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\YeahMobi\\": "src"
+            "Plients\\YeahMobi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\YeahMobi\\Tests\\": "tests"
+            "Plients\\YeahMobi\\Tests\\": "tests"
         }
     },
     "config": {
